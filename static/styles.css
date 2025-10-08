@@ -65,11 +65,11 @@ nav ul li a:hover, nav ul li a:focus {
 /*Navigation Bar Styles End*/
 /* Home Page Styles Start */
 section {
-    padding: 2rem;
+    padding: 0rem;
     background: #fff;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    margin: 1rem auto;
-    max-width: 97.5vw;
+    margin: auto auto;
+    max-width: 100vw;
 }
 .DoorDashBar {
     background: #ff4c4c;
@@ -80,7 +80,7 @@ section {
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     text-align: center;
     margin: 0;
-    width: 100%;
+    max-width: 100vw;
 }
 .DoorDashBarLink {
     display: flex;
@@ -100,11 +100,16 @@ section {
 
 .DoorDashBarLink span {
     font-style: italic;
-    flex: 1;
     text-align: center;
     white-space:wrap;
     font-size: 30px;
+    @media screen and (max-width: 1200px) {
+        font-size: 20px;
+        display:block;
+        overflow: hidden;;
+    }
     display: flex;
+    max-width: 100vw;
     justify-content: space-evenly;
     align-items: center;
 }
@@ -142,8 +147,7 @@ main h1 {
     flex-direction: column;
     margin: auto auto;
     margin-top: 100px;
-    width: 1500px;
-    max-width: none;
+    max-width: 100vw;
     overflow: hidden;
     justify-content: center;
     align-items: center;
@@ -403,7 +407,7 @@ footer {
     background: #222;
     color: #fff;
     position: static;
-    width: 100%;
+    max-width: 100vw;
     bottom: 0;
 }
 
